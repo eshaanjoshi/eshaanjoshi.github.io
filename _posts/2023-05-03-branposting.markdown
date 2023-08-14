@@ -2,6 +2,7 @@
 layout: post
 title:  "Bran, a BF Tutorial"
 date:   2023-05-03 13:22:47 -0400
+exclude: true
 categories: project
 ---
 

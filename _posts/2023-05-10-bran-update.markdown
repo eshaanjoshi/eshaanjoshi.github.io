@@ -2,6 +2,7 @@
 layout: post
 title:  "Updating Bran and Current Challenges"
 date:   2023-05-10 21:27:28 -0400
+exclude: true
 categories: project
 ---
 
