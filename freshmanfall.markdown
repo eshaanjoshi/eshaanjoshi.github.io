@@ -12,7 +12,7 @@ Honestly, there's not much that can prepare you for what your freshman year at C
 
 ## 21-127 Concepts of Mathematics
 
-This was by far my favorite course. I really liked the professor, and while I struggled with the first half of the coursework, thanks to the TAs and the instructing, I was able to do really well to close out the semester. I had a great time, and I'm really glad I took it early. Concepts also got me interested in doing 15-251 Great Theoretical Ideas in Computer Science, and hopefully 15-354 Computation and Discrete Math
+This was by far my favorite course. I really liked the professor, and while I struggled with the first half of the coursework, thanks to the TAs and the instructing, I was able to do really well to close out the semester. I had a great time, and I'm really glad I took it early. Concepts also got me interested in doing 15-251 Great Theoretical Ideas in Computer Science, and hopefully 15-354 Computational Discrete Mathematics
 
 ## 21-259 Calculus in Three Dimensions
 
@@ -28,7 +28,7 @@ My favorite parts of this class were the bits where we dipped into formal logic 
 
 ## 15-122 Principles of Imperative Computation
 
-This class was just a bridge too far. After getting seriously ill in the leadup to the first midterm, and realizing that I was way too spread out to handle my workload, I dropped 15-122. There [is a success story]({}) about this course though...
+This class was just a bridge too far. After getting seriously ill in the leadup to the first midterm, and realizing that I was way too spread out to handle my workload, I dropped 15-122. There [is a success story]({% link freshmanspring.markdown}) about this course though...
 
 
 [Back]({% link courses.markdown %})
