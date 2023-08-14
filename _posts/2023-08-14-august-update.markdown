@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Bran, a BF Tutorial"
-date:   2023-05-03 13:22:47 -0400
-categories: project
+title:  "August Update! And future plans"
+date:   2023-08-14 02:09:23 -0400
+categories: update
 ---
 
 # The Bran Project
