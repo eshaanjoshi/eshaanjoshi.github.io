@@ -28,7 +28,7 @@ My favorite parts of this class were the bits where we dipped into formal logic 
 
 ## 15-122 Principles of Imperative Computation
 
-This class was just a bridge too far. After getting seriously ill in the leadup to the first midterm, and realizing that I was way too spread out to handle my workload, I dropped 15-122. There [is a success story]({% link freshmanspring.markdown}) about this course though...
+This class was just a bridge too far. After getting seriously ill in the leadup to the first midterm, and realizing that I was way too spread out to handle my workload, I dropped 15-122. There [is a success story]({% link freshmanspring.markdown %}) about this course though...
 
 
 [Back]({% link courses.markdown %})
