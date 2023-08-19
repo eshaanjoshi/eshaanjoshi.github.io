@@ -24,7 +24,7 @@ Malloclab was a huge assignment, and we continued forward with concurrency and w
 
 So, I just told you *everything* I did in 213, but honestly, I just love talking about that class. It was so much fun, and I really, really want to take some of the courses this unlocks like 15-410 Operating Systems, 15-411 Compilers, 15-346 Computer Architecture and 15-418 Parallel Computer Architecture. While I'm focused on transferring to CS in sophomore year, I will try to sneak in a few of these courses ASAP :)
 
-Finally, shoutout Brian Railing for being a wonderful professor and inspiring my two projects that I'm working on as of the writing of this page, `Lox`, a project following the Crafting Interpreter's book (and translating the code to Rust), and a read-through and analysis of the Linux 0.0.1 kernel.
+Finally, shoutout Brian Railing for being a wonderful professor and inspiring my two projects that I'm working on as of the writing of this page, `Fillet`, a project following the Crafting Interpreter's book (and translating the code to Rust), and a read-through and analysis of the Linux 0.0.1 kernel.
 
 ## 21-241 Matrices and Linear Transformations
 
