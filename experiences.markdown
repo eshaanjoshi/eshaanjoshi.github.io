@@ -27,8 +27,7 @@ I'm serving as a catch-all intern that handles website design and maintenance, r
 
 ## Projects
 
- - Lox
- - SFSLab
+ - Fillet
  - Reading the Linux Kernel
 
 Updates will be posted to project pages as they continue!

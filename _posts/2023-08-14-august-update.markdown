@@ -25,15 +25,11 @@ The *other* internship started after I got reached out to by the Youth Court Ini
 
 ## The projects!
 
-I got three of these I'm currently working on, and I'll be posting about them periodically.
-
-### SFSLab
-
-One of the courses I took this summer, 15-213, released an experimental lab called "SFSLab", with a goal of educating students on filesystem design. However, the project was optional and didn't really have much in terms of testing or anything, so it became one of my goals in my freetime. I wanted to learn how to write a filesysem, but also wanted to help the course finesse this lab. I'm also hoping my work on this will make me a slightly more attractive TA applicant soon-ish :)
+I got two of these I'm currently working on, and I'll be posting about them periodically
 
 ### `Fillet`
 
-Lox is an interpreter based on the [Crafting Interpreters](https://craftinginterpreters.com/) book. While the book is written in Java and C, I am currently rewriting the code in Rust, a language I don't know, in an effort to learn Rust, interpreters, and more.
+Fillet is an interpreter based on the [Crafting Interpreters](https://craftinginterpreters.com/) book. While the book is written in Java and C, I am currently rewriting the code in Rust, a language I don't know, in an effort to learn Rust, interpreters, and more.
 
 ### Reading the Linux Kernel
 
