@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sophomore Fall Coursework
-permalink: /courses/sophomorefall/
+title: Sophomore Spring Coursework
+permalink: /courses/sophomorespring/
 exclude: true
 ---
 
@@ -24,7 +24,7 @@ I did not enjoy this class. I have no further comments.
 I seriously regret not taking a math-based probability course this semester. While it would've absolutely destroyed my grade, something like 21-325 would've been significantly more exciting and impactful to my college experience. However, I started teaching myself probability theory and mathematical probability on my own after this course.
 
 ## 15-150 Functional Programming
-Incredible course, to be honest. I do consider SML to be an incredibly fun language to write code in, even if I consider Ocaml's environment to be more than a little easier to use. 150 made me want to use recursion in all my programs, and also got me interested in Programming Language research and the theories behind them. I also really did enjoy some of the proofs, though I wish they were a little less involved sometimes.
+Incredible course, to be honest. I do consider SML to be an incredibly fun language to write code in, even if I consider Ocaml's environment to be more than a little easier to use. 150 made me want to use recursion in all my programs, and also got me interested in Programming Language research and the theories behind them. I also really did enjoy some of the proofs, though I wish they were a little less annoying sometimes.
 
 
 
