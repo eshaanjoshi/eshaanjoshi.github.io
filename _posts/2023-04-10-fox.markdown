@@ -1,0 +1,15 @@
+---
+layout: post
+title:  Fox News faces misinformation trial
+date:   2023-01-30 3:58:54 -0400
+categories: writing
+---
+
+
+Fox News has been found to have lied to the public in the Dominion voting case. Judge Eric Davis of Delaware stated that it was [“CRYSTAL clear that none of the Statements relating to Dominion about the 2020 election are true,”](https://www.politico.com/news/2023/03/31/dominion-lawsuit-fox-trial-00090034) while moving the case forward to a trial. The now upcoming trial will determine whether Fox acted with malice in order to explicitly and intentionally misinform the public. Evidence pointing out that Fox did know what they were reporting on was incorrect will also be damning to their defense. [Fox alleged](https://apnews.com/article/fox-news-dominion-defamation-lawsuit-voting-sexism-9f0b4ec94a19fa68c1205864fef277c5) that Dominion had flipped voters from Democratic to Republican, were controlled by Venezuela, and other lies involving the 2020 presidential election. Dominion refutes all of the claims, and as of now, no evidence has been found that substantiates any of these positions. 
+
+Fox has staked its defense on the First Amendment and the claim that they were merely reporting what had been alleged by Donald Trump and his allies during the election. Judge Davis pointed out that without any rebuttal, disagreement, or vetting, Fox had essentially spread misinformation without any indication that it was opinion on misinformation. While there is tremendous leeway for media when it comes to freedom of speech, [this may be a bridge too far](https://www.vox.com/politics/23644951/fox-news-dominion-lawsuit-smartmatic-defamation) considering Fox’s attacks on Dominion and the veracity of their claims.
+
+Fox News Networks faces the possibility of paying $1.6 billion to Dominion over this lawsuit, a price that would seriously damage the network, and its owner Rupert Murdoch. Murdoch owns a huge stake in significant parts of various media sources. [He also faces the possibility of testifying in the trial, the judge stated, putting one of the wealthiest men on the planet under fire.](https://www.nytimes.com/2023/04/05/business/media/rupert-murdoch-testify-fox-dominion-trial.html) Dominion has indicated that they want both Rupert and his son Lachlan to testify, in their positions as owner and chief executive, respectively. Fox's defense has tried to prevent this from happening, claiming that their testimony is not necessary in the trial, and their presence would add nothing, though Dominion contests this. This would put the Murdoch's on the list of people that Dominion wants to see testify in the trial, a list that includes other Fox execs, multiple Fox hosts, and a number of other people associated in the media corporation.
+
+The Dominion trial is slated to begin in December.
