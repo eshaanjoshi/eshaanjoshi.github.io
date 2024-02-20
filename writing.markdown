@@ -11,6 +11,23 @@ Here's a collection of quick links to my writing. This includes major categories
 
 This section is the most important to me, since it's the stuff I've put the most into. They're the pieces that kept me up all night, that made me think and rethink everything, that changed how I looked at things. They're also a good estimation of my writing style, and they cover a variety of topics. 
 
+[The gangster, the Messiah, the thief (part one of two)]({% link _posts/2024-02-19-film-forum.markdown %})
+
+[Tinker, Tailor, Cynic, Spy]({% link _posts/2024-02-11-film-forum.markdown %})
+
+[Hopelessness among the Hope]({% link _posts/2023-12-11-film-forum.markdown %})
+
+[Don't be stupid, be a smarty - come and mock the Nazi party!]({% link _posts/2023-12-04-film-forum.markdown %})
+
+[Mon dessin ne représentait pas un chapeau]({% link _posts/2023-11-20-little-prince.markdown %})
+
+[The truth of the Golem]({% link _posts/2023-03-27-noveltea.markdown %})
+
+[Perhaps there is no end to history]({% link _posts/2023-03-20-politics.markdown %})
+
+[Foul Play: BK Moves the Nets]({% link _posts/2023-02-13-foul-play.markdown %})
+
+[A Celebration of Roses]({% link _posts/2023-01-30-roses.markdown %})
 
 
 #### Foul Play
@@ -65,16 +82,4 @@ This section is the most important to me, since it's the stuff I've put the most
 [#25]({% link _posts/2024-02-19-foul-play.markdown %})
 
 #### General Sports
-
-[#1]({% link _posts/2023-01-30-roses.markdown %})
-
-[#2]({% link _posts/2023-02-06-tom-brady.markdown.markdown %})
-
-[#3]({% link _posts/2023-02-13-superbowl.markdown %})
-
-[#4]({% link _posts/2023-02-27-msu.markdown %})
-
-[#5]({% link _posts/2023-10-09-baseball.markdown %})
-
-[#6]({% link _posts/2023-10-30-baseball.markdown %})
 
