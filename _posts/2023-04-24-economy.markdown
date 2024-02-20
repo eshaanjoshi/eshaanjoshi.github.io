@@ -1,0 +1,41 @@
+---
+layout: post
+title:  The terrible, horrible, no-good very bad economy
+date:   2023-04-24 3:58:54 -0400
+categories: writing
+---
+
+
+A few days ago, I was talking to a friend of mine who became a nurse after high school. He’d worked his ass off to get that job, putting in way more hours than anyone else to get his training and license done. I don’t pretend to know how nursing works, but I knew he’d gone through a lot to get his job. 
+
+He’d been in the medical industry for about four years, and yesterday, he told me something I’d never thought I’d hear.
+
+He was quitting his job, and heading to an online college to do computer science. Not because he particularly enjoyed computer science — hell, from what I understood, he hated it. But it was work, and it would probably get him a job. And there was no earthly way he would continue being a nurse.
+
+The pandemic burned out our nurses. It had been day in, day out, trying to keep people alive. Beds overflowed, and when deaths spiked over summer, they were pulling more hours, understaffed, underpaid, and overwhelmed.
+
+It’s not just nursing. The pandemic changed work environments across the country. Dozens of senior level managers, close to retirement age, packed their bags and left. People were unemployed, and yet, there was a job shortage. 
+
+It continued long past the end of the pandemic. Inflation has been rising, and the economy has been anemic. Manufacturing, especially in the U.S., faces a recession, [led by the auto industry](https://www.autonews.com/dealers/car-dealers-increasingly-worried-about-economy). Tech, the golden child of all careers, [has dried up too](https://www.indmoney.com/articles/us-stocks/tech-layoffs-2023-why-did-google-amazon-and-facebook-cut-thousands-of-jobs), with Facebook — sorry Meta — Google, Netflix, and Apple facing layoff after layoff.
+
+What the hell happened?
+
+The tech bubble was always going to be unsustainable. Tech ebbs and flows, each time focusing on some cool new piece of science that they cheer on, and then get burned out on. In the 2000s, it was the dot com bubble. In the last few years it's been blockchain, NFTs, crypto, and “the cloud” — and now, AI is coming to take our jobs and the sky is falling.
+
+Tech overhired, picking up dozens of devs to capitalize on how terminally online everyone was over the pandemic. Blockchain scammers and crypto hacks marketed their careers to dozens of people, who became unemployed when the rug was eventually pulled.
+
+Nursing couldn’t find enough people, and they worked what they had to the bone. Now, nurses are quitting, and the ones that are left are being worked ever harder.
+
+Manufacturing shuttered doors, the plants stopped working due to health shutdowns, and now, because of shutdowns in other parts of the world, they can’t get the things they need to produce.
+
+And while all this is happening, low-wage labor, the quintessential no-questions-asked job, has been facing fewer and fewer applicants. The service sector is still seeing labor shortages, as people are unwilling to come in to work, not caring enough about the abysmal wages they’re being offered.
+
+It’s not just us. The economy isn’t just in the shitter, to put it lightly, because the U.S. is struggling. Our semiconductor woes are because of Taiwan, our manufacturing crisis partially because of Taiwan, China, and Europe. [Germany is facing its own manufacturing crisis](https://www.theguardian.com/world/2023/jan/03/germany-industrial-heartland-energy-crisis-small-and-medium-sized-businesses) — the once-bulwark of the EU’s economy now slowing to a crawl. China has regulated and re-regulated its economy over and over again, each time with more notice of how shaky it is. The global economy, the humming center of the world, which took pears from Argentina and put them in a little plastic cup in a Wawa off the interstate, is still feeling the aftereffects of the virus.
+
+It doesn’t help that the Russians decided to invade Ukraine. Ukraine is a massive grain exporter, and the Russian’s butchering of Ukrainian shipping lines [has made famine far more likely in surrounding countries](https://www.nytimes.com/2023/01/02/us/politics/russia-ukraine-food-crisis.html) supported by Ukrainian grain. Financial giants are now far warier of investing in Europe, China, or Russia, with all three facing the backlash from the conflict as the EU tries to figure out how to make it go away. Ukraine, on the other hand, is taking pummelling after pummelling, and finance in Europe is scared of what the war’s continuation means.
+
+It’s hard to imagine a solution for this problem; the economy is a slow, annoying beast. It can take months for policy to impact people (by which time brain-eating aliens might have landed in Paris.) But, the hope is that things will change. Metrics keep pointing towards things getting better, and by and large, they’re less bad than they were before. Sure the economy is still pretty bad, but hey, it could always be worse!
+
+The hope is that 2023 is the last year of the slump, and most analysts predict global growth as investment spikes in 2024 and beyond, especially in alternative energy. When the war in Ukraine ends, there will be billions pouring into the industry of that country, which will improve the economy of a number of countries as well. Things should, hopefully, get better.
+
+Knock on wood.
