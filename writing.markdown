@@ -22,7 +22,7 @@ Here's a collection of quick links to my writing. This includes major categories
 [#12]({% link _posts/2023-09-11-foul-play.markdown %})
 [#13]({% link _posts/2023-09-18-college-foul-play.markdown %})
 [#14]({% link _posts/2023-09-18-foul-play.markdown %})
-[#15]({% link _posts/2023-010-02-foul-play.markdown %})
+[#15]({% link _posts/2023-10-02-foul-play.markdown %})
 [#16]({% link _posts/2023-10-09-foul-play.markdown %})
 [#17]({% link _posts/2023-10-30-foul-play.markdown %})
 [#18]({% link _posts/2023-11-06-foul-play.markdown %})
