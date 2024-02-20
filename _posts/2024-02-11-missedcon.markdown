@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The Tartan’s Missed Connections
-date:   2023-02-11 3:58:54 -0400
+date:   2024-02-11 3:58:54 -0400
 categories: writing
 ---
 
