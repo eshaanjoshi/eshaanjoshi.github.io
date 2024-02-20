@@ -8,4 +8,4 @@ permalink: /writing/
 
 
 ## Foul Play
-- [Freshman Fall]({% link _posts/2023-01-30-foul-play.markdown %})
+[#1]({% link _posts/2023-01-30-foul-play.markdown %})
