@@ -1,0 +1,20 @@
+---
+layout: post
+title:  Trump faces charges in Georgia
+date:   2023-09-11 3:58:54 -0400
+categories: writing
+---
+
+In late August, Former President Donald Trump was [arrested, booked, and released](https://www.nbcnews.com/politics/donald-trump/trump-arrest-fulton-county-booked-rcna101641) in Georgia on charges of racketeering and conspiracy. It’s an unprecedented move, with Trump becoming the first former president to face charges of this magnitude after leaving office. He was released on a bail of $200,000, and didn’t spend long in jail. He self-reported his statistics, left, and started making claims that the charges brought against him were biased. He was arrested with about a dozen co-conspirators, many of whom were alleged to be involved in the same activities as the former President.
+
+What is [RICO?](https://concept.journals.villanova.edu/article/view/312/275)
+
+The Racketeer Influenced and Corrupt Organizations Act is a broad power of the government to bring charges against people involved in a group committing criminal activity. It allows for the extension of criminal charges and consequences towards those who are invested in organizations that have committed a class of activities called “racketeering.” This law, which was initially used to prosecute and wipe out much of the power behind the mob during its heyday, has been extended to use in other contexts, and most recently, is the rule that is bringing charges towards the former President.
+
+Going forward
+
+There’s not much to say about the Trump charges now. The trial will continue to chug along as the judge and the attorneys representing both sides attempt to figure out how to proceed. The earliest of Trump’s trials will be taking place in [March of 2024](https://www.nytimes.com/2023/09/08/nyregion/donald-trump-civil-trial-date.html), which means there’s still a lot of speculation as to what Georgia’s DA wants to see out of this case.
+
+Should the RICO allegations hold true, the former president would be in trouble. While [Trump could still run if convicted](https://fivethirtyeight.com/features/trump-convicted-before-election-day-what-if/), the complexities of the situation mean that consequences from a RICO conviction could significantly hamper his ability to run for office, something that could lead him to a second election defeat and only further remove him from the protections the presidency offers.
+
+Regardless, this is a huge step in one of the biggest cases in the country, and its results will have widespread effects on the 2024 presidential election and beyond.

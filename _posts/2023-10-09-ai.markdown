@@ -1,0 +1,23 @@
+---
+layout: post
+title:  CMU faculty testify in front of Congress on AI
+date:   2023-10-09 3:58:54 -0400
+categories: writing
+---
+
+
+Last month, several Carnegie Mellon faculty members testified or gave opinions to Congress about the rise of AI and consequences it may have on society. 
+
+Many AI founders have roots at Carnegie Mellon. [Allen Newell and Herbert Simon](https://www.heinz.cmu.edu/media/2023/July/artificial-intelligence-explained), of Hunan Building fame, began work on the first artificially intelligent systems and coined the term with early researchers in the field. This launched AI as a field, with the affectionately named “Logic Theorist” serving as a pioneer for systems capable of automated thinking. They won the [Turing Award](https://cloudlab.cmu.edu/history-of-automated-science-at-cmu) for **this** discovery in 1975. The field relied on a foundation of logical reasoning, psychology, and later machine learning, statistics, and mathematics.
+
+The first person from Carnegie Mellon to testify in front of Congress was Heinz Dean [Ramayya Krishnan](https://www.cmu.edu/news/stories/archives/2023/september/cmu-dean-testifies-before-senate-subcommittee-on-the-need-for-transparency-in-ai). On Sept. 12, he advocated for transparency and accountability on AI models. He discussed [developments between Carnegie Mellon and the National Institute of Science and Technology](https://www.cmu.edu/news/stories/archives/2023/august/cmu-and-nist-team-to-manage-ai-risk), the ethical use of AI, and building a system people could trust with representative data.
+
+Krishnan recommended a standardized documentation and watermarking system to monitor and identify AI-generated data. The primary argument was focused on preventing AI from entering a feedback loop where AI-generated data was used to train an AI. This would leading to overfitting and make it difficult to identify who created data. Krishnan also recommended creating a way to increase security and work on best practices to help standardize AI error collection. 
+
+These recommendations shed light on how to create regulations for the intricacies and implications of AI. 
+
+[Rayid Ghani](https://technical.ly/civic-news/cmu-rayid-ghani-testimony-senate-hearing-ai/), a professor in the Machine Learning department and Heinz Information Systems, also testified in front of Congress on the ethical implications of AI. As [chief scientist for the Obama 2012 presidential campaign and founder of the Data Science for Social Good Fellowship](https://www.cmu.edu/news/stories/archives/2023/september/cmu-artificial-intelligence-experts-brief-policymakers), he spoke on topics of data and ethics from his experiences with federal, state, and local agencies. He discussed how AI in these government agencies are typically not built in-house but rather procured through vendors, and how this can lead to agencies not critically assessing whether AI really fits their use case or how responsible or ethical the AI is. He called on agencies to (1) determine which use cases require the use of AI, (2) create a set of common procurement requirements for AI, (3) create guidelines for the community to give input on the AI system, and (4) create trainings, processes, and tools to support teams that procure these AI systems.
+
+In September, [College of Engineering Dean Bill Sanders](https://www.cmu.edu/news/stories/archives/2023/september/cmu-dean-demonstrates-how-ai-could-advance-sdgs-at-un-briefing) testified in front of the United Nations in defense of AI. He discussed programs at the CMU-Africa campus that use AI to educate and spread information **on the continent**.
+
+Returning to Congress, [head of the Department of Mechanical Engineering, Jon Cagan](https://www.cmu.edu/news/stories/archives/2023/september/cagan-presents-future-of-ai-human-teaming-at-congressional-briefing) helped moderate another congressional debate on AI. He discussed input from **various groups** and the reality that AI could help make breakthrough progress in innovation and education. Bringing together a panel of experts, Cagan discussed how AI can facilitate teamwork and accelerate the research process, something which could pay massive dividends down the road. He also emphasized the importance of educating people about how AI works.

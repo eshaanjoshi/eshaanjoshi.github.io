@@ -1,0 +1,20 @@
+---
+layout: post
+title:  Apple introduces $3,500 virtual reality headset
+date:   2024-02-11 3:58:54 -0400
+categories: writing
+---
+
+
+
+In what can only be described as our first foray into the world of “Black Mirror,” Apple has released a new headset that’s meant to seamlessly integrate virtual reality and augmented reality (VR/AR) capabilities into our day-to-day lives — provided you have $3,499 to shell out for it. Apparently, 200,000 people did, and from these sales, we’ve been able to get a cursory look at the Apple Vision Pro (AVP).
+
+While the headset’s external battery pack and associated cable make the headset lighter — by about 100 grams compared to the Oculus Quest Pro — it’s still heavy. All that weight is designed to support the various additional features the device has, including an external screen. The Vision Pro’s internal displays also seem to have above-4K quality per eye, a number of cameras and microphone, and the M2 chip, making the AVP closer to a laptop shoved into a headset than their competition.
+
+The headset is designed to help users flip between AR and VR, which means not only providing a good quality, responsive display to the user, but also allowing for quick responses to events happening in real-time, as well as sensing motion and processing all of that. That additional processing power, as well as the requirements it’s added to Apple, make the AVP incredibly functionality-dense, and the M2 and accompanying R1 chip important in keeping the thing working.
+
+At the risk of coming across like an Apple fanboy, the AVP also boasts immersive video, spatial video/photo viewing that puts the user within the frame, and a lot of other sci-fi-sounding features.
+
+The problem is that the AVP is still heavy. While the idea of watching a movie on one seems interesting, I don’t think it’s been recommended by most doctors, and watching something in small intervals just doesn’t hit, at least not without Subway Surfer gameplay below it. The AVP is a $3,500 short-term device that doesn’t really seem to do anything very exciting. The technology is amazing, and I can imagine that the Department of Defense and major corporations will absolutely jump on it (three-dimensional immersive surgery anyone?), but for the average person, this just doesn’t do anything specific. For the cost, and compared to other VR goggles, it’s fair to say Apple has made something very impressive without much real-world need.
+
+That practice has paid off for them in the past, so I guess it’s more a matter of waiting and seeing.

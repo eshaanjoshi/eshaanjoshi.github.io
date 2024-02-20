@@ -1,0 +1,25 @@
+---
+layout: post
+title:  Antisemitism at Carnegie Mellon
+date:   2023-10-30 3:58:54 -0400
+categories: writing
+---
+
+
+*Author’s Note: Many of the students I interviewed were not interested in their names being published in the Tartan. Many only spoke with me on the condition of anonymity.*
+
+It’s been a tumultuous few weeks for the Jewish community since Oct. 7, 2023. After what became the deadliest attack on Jewish civilians since the end of World War II, Jewish communities across the world came together, in solidarity and grief. “There aren’t really too many people who don’t know someone in Israel right now,” said one member of Carnegie Mellon's Jewish community, pointing out that for many, the conflict had put friends or family in danger. If you’ve been a part of the community since then, it’s been one that is closer, and tighter, than before, they said. 
+
+For many, though, that support was not reflected more broadly on campus. I interviewed eight Carnegie Mellon students and four friends from high school who attend ASU, Columbia, and NYU. Many people said that, outside of the Jewish community, it has been hard for them to find support. 
+
+Two weeks ago, Stanford suspended a [lecturer](https://www.cnn.com/2023/10/13/us/stanford-instructor-jewish-holocaust-comments-reaj/) after the instructor downplayed the Holocaust and targeted American Jewish students for an anti-Israel demonstration. It’s become a common refrain that people who are against Israel do not feel animosity toward the Jewish communities, especially American Jews distanced from the state itself, but it became difficult for many that I had spoken with to really identify the line. Many found they were being blamed or questioned for the actions of a state that they had never lived in. One student from Arizona State reported that he’d been asked about his opinion by many professors in an effort to spur class discussion. He’s never been to Israel, and his family has been in the United States since the 1920s. 
+
+Sentiments among the Carnegie Mellon students with whom I spoke were more positive but plenty still had concerns about safety. Many felt like most of their peers didn’t have strong opinions about the war, and most of those who did were not hostile. There were incidents that made several students feel unsafe, but they were quick to point out that most Carnegie Mellon students have not been actively hostile.
+
+As for the protests, the rallies, or the other pro-Palestine incidents that are occurring on campus, my conversations were less conclusive. Some students felt strongly that the people who supported Palestine were not antisemitic. Some said that while they didn’t agree with some of the statements made, people were entitled to believe what they did, and it wasn’t openly bigoted. But others pointed out that while the demonstrators were not antisemitic in their eyes, the cause they felt was being supported indirectly — Hamas — definitely was. 
+
+Some people I spoke to felt that the campus had gotten less welcoming and safe for Jewish people. Many reported that there had been a rise in antisemitic conspiracy speech in the weeks following Oct. 7. Some pointed to the @cmu_fence Instagram account, and it doesn’t take much to scroll down there and see significant antisemitism. These include comments that say, "if you kill you should be killed back."
+
+In addition, they had also had more aggressive interactions with those who disagreed politically. Some voices raised concerns that Jewish spaces were being pushed into by those who had an agenda, and others pointed out that people had become far less willing to engage positively with the community after Oct. 7. To many, they were watching people they knew begin to support and justify horrific actions in the name of “anti-colonialism,” something which many people saw in the protests and rallies on campus. Signs that both justified or minimized the actions taken by Hamas were easily identifiable, and some felt those were part of a more hostile campus environment. Moreover, many people shared stories of seeing their friends start spreading conspiracy theories about Israel, the Israel Defense Force (IDF), or the Jewish people, condemning the entirety of the Jewish community for actions made by the IDF, or doubting the atrocities. Many felt as if it was difficult to feel safe and secure on a campus where their peers were harboring antisemitic conspiracies. And while a majority of content being spread was broadly fine, it was easy to find people who had fallen down the rabbit hole, posting conspiracies, antisemitism claims, or full support of a terrorist organization due to some perceived “resistance.”
+
+Many Jewish students I spoke with feel like antisemitism has gotten worse on campus, and while they feel that the administration has definitely taken great steps forward in keeping the Jewish community of Carnegie Mellon safe, it seems to many that the community is under increased stress from antisemites on campus.
