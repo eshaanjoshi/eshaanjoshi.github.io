@@ -24,11 +24,11 @@ I served as a catch-all intern that handles website design and maintenance, rese
 
 ## My Writing
 
-I'm currently published consistently in The Tartan. I contribute to the News section, focusing on foreign policy and politics, as well as contributing to Forum, The Tartan's opinion section. I also pen the weekly satire column "Foul Play", which makes a mockery of whatever big news in going in sports at the time.
+I'm currently published consistently in The Tartan. I contribute to the News section, focusing on foreign policy and politics, as well as contributing to Forum, The Tartan's opinion section. I also pen the weekly satire column "Foul Play", which makes a mockery of whatever big news in going in sports at the time. 
 
 ## CMU Readme
 
-I'm the Editor-in-Chief of a satire magazine, Readme. As of the updating of this page, we are currently in progress of printing issue #1.
+I'm the Editor-in-Chief of a satire magazine, Readme. We're slated to publish biweekly, and we've met our deadlines. The official readme website is currently still in progress.
 
 
 
