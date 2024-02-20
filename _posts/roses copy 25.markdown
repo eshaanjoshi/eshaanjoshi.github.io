@@ -1,0 +1,21 @@
+---
+layout: post
+title:  A celebration of roses
+date:   2023-01-30 3:58:54 -0400
+categories: writing
+---
+
+It was called the Tournament of Roses, and it was nothing if not a spectacle. A celebration of California, her flowers blooming in the first days of January, while much of the country was buried in snow. In some years it featured a race between ostriches, in others, an elephant was pitted against a camel. Held in Pasadena, it became America’s New Year Celebration: the Rose Parade.
+
+But in the winter of 1902, the Tournament of Roses was none of these things. It was merely the celebration of a sunny city, of beautiful weather. A celebration that needed a central attraction. And they had one – a football game, between the Michigan University Wolverines, and the Stanford Cardinal. They called it the Tournament East-West Football Game.
+
+The game was a blowout. A blowout so massive that the committee refused to host a football game until 1916, fearing that similar scores would push audiences away. But when the game recommenced over a decade later, it spawned a tradition. Through both world wars, through relocation to a new stadium, through it all, it remained. It was the Rose Bowl. It was the Granddaddy of them all.
+
+In later years, the Rose Bowl was tied to conferences. It would host a game between the best ‘pacific coast team’, and the ‘best team in the east’. That ‘pacific coast team’ would become the best team in the Pacific Athletic Conference, the Pac-12, and that ‘best team in the east’ would become the champion of the current Big Ten athletic conference. The stadium would be renovated, rebuilt, and changed bit by bit to provide a stadium for the best of college football to show their skills, playing under the light of a neon sign.
+
+At the last traditional Rose Bowl, Penn State was invited to play against Utah. It’s fitting, considering that a hundred years ago, USC and Penn State battled it out in the first Rose Bowl in the first ever game at their current stadium. A hundred years of that stadium, over a hundred of that tradition, ended with their 35-21 victory over Utah this January.
+
+The neon sign, red and green, that flickers above the entrance to the stadium, has witnessed the greatest teams in college football play. While it’ll witness many more, after this year, the Rose Bowl will no longer be the East-West game. The game will no longer feature the Pac-12 and the Big 10 exclusively. Those conference tie-ins, what once defined the Rose Bowl, will be no more. The college football playoffs have claimed the sport’s oldest tradition, and the stadium will now feature one of many playoff matchups. And while it’s possible that the Pac-12 will meet the Big Ten at that stadium again, it won’t be an iconic Rose Bowl matchup. It would be a chance meeting, a step on the way to the national championship. It’ll just be another playoff game.
+
+It’s hard to say goodbye. If you grew up watching the Rose Bowl, seeing it become just another stadium is hard. But college football is changing, now more than ever. Conferences have realigned, athletes are making millions. Rivalries forged in blood and sweat have died, and new ones are forming. The last traditional Rose Bowl is the end of an era, one that followed the development and popularization of football. This new era begins with football at its zenith, the most popular sport in America. It begins today, and by 2024, the sport may look completely different. And the Rose Bowl, in one form or another, will continue through it all.
+
