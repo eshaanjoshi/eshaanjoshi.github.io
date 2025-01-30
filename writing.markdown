@@ -81,5 +81,4 @@ This section is the most important to me, since it's the stuff I've put the most
 
 [#25]({% link _posts/2024-02-19-foul-play.markdown %})
 
-#### General Sports
 
