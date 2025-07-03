@@ -14,5 +14,6 @@ My goal at CMU is to take as many courses that interest me as possible. In that 
 - [Freshman Summer]({% link freshmansummer.markdown %})
 - [Sophomore Fall]({%link sophomorefall.markdown%})
 - [Sophomore Spring]({%link sophomorespring.markdown%})
+- [testing]({%link testing.markdown%})
 
 # Non-Course Studies
