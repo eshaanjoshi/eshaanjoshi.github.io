@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Page Editor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+            padding: 10px 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        select.btn {
+            font-weight: 400;
+            min-width: 100px;
+        }
+
+        .btn:hover {
+            background: #e9ecef;
+        }
+
+        .btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .editor {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 40px;
+            font-size: 16px;
+            line-height: 1.6;
+            outline: none;
+            overflow-y: auto;
+            background: white;
+            white-space: pre-wrap;
+            tab-size: 4;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .editor:focus {
+            outline: none;
+        }
+
+        .shortcut-hint {
+            color: #6c757d;
+            font-size: 12px;
+            margin-left: auto;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .shortcut-hint span {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <button class="btn" id="boldBtn" title="Bold (Ctrl+B)">
+            <strong>B</strong>
+        </button>
+        <button class="btn" id="italicBtn" title="Italic (Ctrl+I)">
+            <em>I</em>
+        </button>
+        <select class="btn" id="fontSelect" title="Font Family">
+            <option value="">Change Font...</option>
+            <option value="system">System Default</option>
+            <option value="serif">Serif</option>
+            <option value="sans-serif">Sans Serif</option>
+            <option value="monospace">Monospace</option>
+            <option value="Georgia, serif">Georgia</option>
+            <option value="Times New Roman, serif">Times New Roman</option>
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Helvetica, sans-serif">Helvetica</option>
+            <option value="Verdana, sans-serif">Verdana</option>
+            <option value="Courier New, monospace">Courier New</option>
+            <option value="Monaco, monospace">Monaco</option>
+        </select>
+        <select class="btn" id="sizeSelect" title="Font Size">
+            <option value="">Font Size...</option>
+            <option value="10px">10px</option>
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px (Default)</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+            <option value="24px">24px</option>
+            <option value="28px">28px</option>
+            <option value="32px">32px</option>
+            <option value="36px">36px</option>
+            <option value="48px">48px</option>
+            <option value="60px">60px</option>
+        </select>
+        <button class="btn" id="saveBtn" title="Save as Plain Text">
+            Save
+        </button>
+        <input type="file" id="fileInput" accept=".txt" style="display: none;">
+        <button class="btn" id="loadBtn" title="Load Plain Text File">
+            Load
+        </button>
+        <div class="shortcut-hint">
+            <div><span>Ctrl+B</span> Bold</div>
+            <div><span>Ctrl+I</span> Italic</div>
+        </div>
+    </div>
+    
+    <div class="editor" id="editor" contenteditable="true" spellcheck="true">
+        Start typing here... Use Ctrl+B for bold and Ctrl+I for italic text.
+    </div>
+
+    <script>
+        const editor = document.getElementById('editor');
+        const boldBtn = document.getElementById('boldBtn');
+        const italicBtn = document.getElementById('italicBtn');
+        const fontSelect = document.getElementById('fontSelect');
+        const sizeSelect = document.getElementById('sizeSelect');
+        const saveBtn = document.getElementById('saveBtn');
+        const loadBtn = document.getElementById('loadBtn');
+        const fileInput = document.getElementById('fileInput');
+
+        // Focus the editor on load
+        window.addEventListener('load', () => {
+            editor.focus();
+        });
+
+        // Font change handler
+        fontSelect.addEventListener('change', (e) => {
+            const selectedFont = e.target.value;
+            const selection = window.getSelection();
+            
+            if (selection.rangeCount > 0 && !selection.isCollapsed) {
+                // Text is selected - apply font to selection only
+                const range = selection.getRangeAt(0);
+                const span = document.createElement('span');
+                
+                if (selectedFont === 'system') {
+                    span.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+                } else {
+                    span.style.fontFamily = selectedFont;
+                }
+                
+                try {
+                    range.surroundContents(span);
+                } catch (e) {
+                    // If surroundContents fails (due to complex selection), use extractContents
+                    const contents = range.extractContents();
+                    span.appendChild(contents);
+                    range.insertNode(span);
+                }
+                
+                // Clear selection and place cursor after the formatted text
+                selection.removeAllRanges();
+                const newRange = document.createRange();
+                newRange.setStartAfter(span);
+                newRange.collapse(true);
+                selection.addRange(newRange);
+            } else {
+                // No text selected - apply to entire editor
+                if (selectedFont === 'system') {
+                    editor.style.fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+                } else {
+                    editor.style.fontFamily = selectedFont;
+                }
+            }
+            
+            // Reset dropdown to show current state
+            fontSelect.selectedIndex = 0;
+            editor.focus();
+        });
+
+        // Font size change handler
+        sizeSelect.addEventListener('change', (e) => {
+            const selectedSize = e.target.value;
+            const selection = window.getSelection();
+            
+            if (selection.rangeCount > 0 && !selection.isCollapsed) {
+                // Text is selected - apply font size to selection only
+                const range = selection.getRangeAt(0);
+                const span = document.createElement('span');
+                span.style.fontSize = selectedSize;
+                
+                try {
+                    range.surroundContents(span);
+                } catch (e) {
+                    // If surroundContents fails, use extractContents
+                    const contents = range.extractContents();
+                    span.appendChild(contents);
+                    range.insertNode(span);
+                }
+                
+                // Clear selection and place cursor after the formatted text
+                selection.removeAllRanges();
+                const newRange = document.createRange();
+                newRange.setStartAfter(span);
+                newRange.collapse(true);
+                selection.addRange(newRange);
+            } else {
+                // No text selected - apply to entire editor
+                editor.style.fontSize = selectedSize;
+            }
+            
+            // Reset dropdown to show current state
+            sizeSelect.selectedIndex = 0;
+            editor.focus();
+        });
+
+        // Save button handler
+        saveBtn.addEventListener('click', () => {
+            const content = convertToPlainTextWithFormatting(editor);
+            downloadTextFile(content, 'document.txt');
+        });
+
+        // Load button handler
+        loadBtn.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        // File input handler
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const content = e.target.result;
+                    const htmlContent = convertPlainTextToHTML(content);
+                    editor.innerHTML = htmlContent;
+                    updateButtonStates();
+                };
+                reader.readAsText(file);
+            }
+            // Reset the input so the same file can be loaded again
+            fileInput.value = '';
+        });
+
+        // Convert HTML content to plain text with embedded formatting
+        function convertToPlainTextWithFormatting(element) {
+            let result = '';
+            
+            function processNode(node) {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    result += node.textContent;
+                } else if (node.nodeType === Node.ELEMENT_NODE) {
+                    const tag = node.tagName.toLowerCase();
+                    let formatStart = '';
+                    let formatEnd = '';
+                    
+                    // Handle formatting tags
+                    if (tag === 'b' || tag === 'strong') {
+                        formatStart = '**';
+                        formatEnd = '**';
+                    } else if (tag === 'i' || tag === 'em') {
+                        formatStart = '*';
+                        formatEnd = '*';
+                    } else if (tag === 'span') {
+                        // Handle font family and size
+                        const style = node.style;
+                        let formatting = [];
+                        
+                        if (style.fontFamily) {
+                            formatting.push(`font:${style.fontFamily}`);
+                        }
+                        if (style.fontSize) {
+                            formatting.push(`size:${style.fontSize}`);
+                        }
+                        
+                        if (formatting.length > 0) {
+                            formatStart = `[${formatting.join(',')}]`;
+                            formatEnd = '[/]';
+                        }
+                    } else if (tag === 'div' || tag === 'p') {
+                        // Add line breaks for block elements
+                        if (result && !result.endsWith('\n')) {
+                            result += '\n';
+                        }
+                    }
+                    
+                    result += formatStart;
+                    
+                    // Process child nodes
+                    for (let child of node.childNodes) {
+                        processNode(child);
+                    }
+                    
+                    result += formatEnd;
+                    
+                    // Add line break after block elements
+                    if (tag === 'div' || tag === 'p') {
+                        result += '\n';
+                    }
+                }
+            }
+            
+            processNode(element);
+            
+            // Clean up extra newlines
+            return result.replace(/\n{3,}/g, '\n\n').trim();
+        }
+
+        // Download text file
+        function downloadTextFile(content, filename) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Convert plain text with formatting to HTML - FINAL IMPROVED VERSION
+        function convertPlainTextToHTML(text) {
+            // First, escape HTML characters in the entire text
+            text = escapeHtml(text);
+            
+            // Replace newlines with <br> tags
+            text = text.replace(/\n/g, '<br>');
+            
+            // Parse the text character by character with proper nesting
+            let result = '';
+            let i = 0;
+            let tagStack = [];
+            
+            while (i < text.length) {
+                if (text[i] === '[') {
+                    // Find the end of this tag
+                    let tagEnd = text.indexOf(']', i);
+                    if (tagEnd !== -1) {
+                        let tagContent = text.slice(i + 1, tagEnd);
+                        
+                        if (tagContent === '/') {
+                            // Closing tag - pop from stack and close span
+                            if (tagStack.length > 0) {
+                                tagStack.pop();
+                                result += '</span>';
+                            }
+                            i = tagEnd + 1;
+                        } else {
+                            // Opening tag - parse and push to stack
+                            let styles = parseFormatting(tagContent);
+                            if (styles) {
+                                tagStack.push(tagContent);
+                                result += `<span style="${styles}">`;
+                            }
+                            i = tagEnd + 1;
+                        }
+                    } else {
+                        // No closing bracket found, treat as regular text
+                        result += text[i];
+                        i++;
+                    }
+                } else if (text.slice(i, i + 3) === '***') {
+                    // Handle triple asterisk as bold (common in some markdown)
+                    let endPos = findNextTripleAsterisk(text, i + 3);
+                    if (endPos !== -1) {
+                        let content = text.slice(i + 3, endPos);
+                        result += `<strong>${content}</strong>`;
+                        i = endPos + 3;
+                    } else {
+                        // No matching ***, treat as regular text
+                        result += text[i];
+                        i++;
+                    }
+                } else if (text.slice(i, i + 2) === '**') {
+                    // Handle double asterisk as bold
+                    let endPos = text.indexOf('**', i + 2);
+                    if (endPos !== -1) {
+                        let content = text.slice(i + 2, endPos);
+                        result += `<strong>${content}</strong>`;
+                        i = endPos + 2;
+                    } else {
+                        result += text[i];
+                        i++;
+                    }
+                } else if (text[i] === '*' && text[i + 1] !== '*') {
+                    // Handle single asterisk as italic
+                    let endPos = findNextSingleAsterisk(text, i + 1);
+                    if (endPos !== -1) {
+                        let content = text.slice(i + 1, endPos);
+                        result += `<em>${content}</em>`;
+                        i = endPos + 1;
+                    } else {
+                        result += text[i];
+                        i++;
+                    }
+                } else {
+                    result += text[i];
+                    i++;
+                }
+            }
+            
+            // Close any remaining open tags
+            while (tagStack.length > 0) {
+                result += '</span>';
+                tagStack.pop();
+            }
+            
+            return result;
+        }
+
+        // Helper function to find next triple asterisk
+        function findNextTripleAsterisk(text, startPos) {
+            let pos = startPos;
+            while (pos <= text.length - 3) {
+                if (text.slice(pos, pos + 3) === '***') {
+                    return pos;
+                }
+                pos++;
+            }
+            return -1;
+        }
+
+        // Helper function to find next single asterisk (not part of ** or ***)
+        function findNextSingleAsterisk(text, startPos) {
+            let pos = startPos;
+            while (pos < text.length) {
+                if (text[pos] === '*') {
+                    // Check if it's not part of ** or ***
+                    if (pos === 0 || text[pos - 1] !== '*') {
+                        if (pos === text.length - 1 || text[pos + 1] !== '*') {
+                            return pos;
+                        }
+                    }
+                }
+                pos++;
+            }
+            return -1;
+        }
+
+        // Parse formatting string into CSS styles - IMPROVED VERSION
+        function parseFormatting(formatString) {
+            const parts = formatString.split(',');
+            let styles = [];
+            
+            for (let part of parts) {
+                const colonIndex = part.indexOf(':');
+                if (colonIndex !== -1) {
+                    const key = part.slice(0, colonIndex).trim();
+                    const value = part.slice(colonIndex + 1).trim();
+                    
+                    if (key === 'font') {
+                        styles.push(`font-family: ${value}`);
+                    } else if (key === 'size') {
+                        styles.push(`font-size: ${value}`);
+                    }
+                }
+            }
+            
+            return styles.length > 0 ? styles.join('; ') : '';
+        }
+
+        // Escape HTML characters
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Button click handlers
+        boldBtn.addEventListener('click', () => {
+            document.execCommand('bold', false, null);
+            updateButtonStates();
+            editor.focus();
+        });
+
+        italicBtn.addEventListener('click', () => {
+            document.execCommand('italic', false, null);
+            updateButtonStates();
+            editor.focus();
+        });
+
+        // Keyboard shortcuts
+        editor.addEventListener('keydown', (e) => {
+            if (e.ctrlKey || e.metaKey) {
+                if (e.key === 'b' || e.key === 'B') {
+                    e.preventDefault();
+                    document.execCommand('bold', false, null);
+                    updateButtonStates();
+                } else if (e.key === 'i' || e.key === 'I') {
+                    e.preventDefault();
+                    document.execCommand('italic', false, null);
+                    updateButtonStates();
+                }
+            } else if (e.key === 'Tab') {
+                e.preventDefault();
+                // Insert tab character at cursor position
+                const selection = window.getSelection();
+                const range = selection.getRangeAt(0);
+                const tabNode = document.createTextNode('\t');
+                range.insertNode(tabNode);
+                range.setStartAfter(tabNode);
+                range.setEndAfter(tabNode);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+        });
+
+        // Update button states based on current selection
+        function updateButtonStates() {
+            const isBold = document.queryCommandState('bold');
+            const isItalic = document.queryCommandState('italic');
+            
+            boldBtn.classList.toggle('active', isBold);
+            italicBtn.classList.toggle('active', isItalic);
+        }
+
+        // Update button states when selection changes
+        editor.addEventListener('selectionchange', updateButtonStates);
+        editor.addEventListener('keyup', updateButtonStates);
+        editor.addEventListener('mouseup', updateButtonStates);
+
+        // Prevent losing focus when clicking toolbar
+        document.addEventListener('mousedown', (e) => {
+            if (e.target.closest('.toolbar') && !e.target.matches('select')) {
+                e.preventDefault();
+            }
+        });
+
+        // Save content to localStorage on input (optional)
+        editor.addEventListener('input', () => {
+            // Uncomment the next line if you want to save content locally
+            // localStorage.setItem('editorContent', editor.innerHTML);
+        });
+
+        // Load saved content (optional)
+        // const savedContent = localStorage.getItem('editorContent');
+        // if (savedContent) {
+        //     editor.innerHTML = savedContent;
+        // }
+    </script>
+</body>
+</html>
