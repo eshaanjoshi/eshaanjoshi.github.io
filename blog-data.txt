@@ -1,0 +1,6 @@
+projects		2026-03-28	projects.html
+posts		2026-03-28	posts.html
+links		2026-03-28	links.html
+RTOS devlog 0.2.6: Mutexes? Mutices? Muticles? Who knows!	Progress in synchronization, and new horizons	2026-03-28	rtos.html
+RTOS devlog 0.2.6: Mutexes? Mutices? Muticles? Who knows!	Progress in synchronization, and new horizons	2026-03-28	first.html
+About Me	Who is this kid, anyhow?	2026-03-28	about.html

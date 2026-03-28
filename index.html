@@ -1,9 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Gradient Descent</title>
+    <meta charset="UTF-8">
+    <title>Gradient Descent | evj</title>
+    <style>
+        body {
+            background: #ffffff;
+            color: #000000;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+        }
+        
+        td {
+            vertical-align: top;
+            padding: 0;
+        }
+        
+        .nav {
+            background: #cccccc;
+            border: 1px solid #000000;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .nav a {
+            color: #0000ff;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .content {
+            border: 1px solid #000000;
+            padding: 20px;
+            background: #ffffff;
+        }
+        
+        h1 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            padding: 0;
+        }
+        
+        h2 {
+            font-size: 16px;
+            margin: 0 0 15px 0;
+            padding: 0 0 5px 0;
+            border-bottom: 1px solid #000000;
+        }
+        
+        .blog-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .blog-list li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #cccccc;
+        }
+        
+        .blog-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .blog-title {
+            font-weight: bold;
+        }
+        
+        .blog-title a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+        
+        .blog-title a:hover {
+            text-decoration: underline;
+        }
+        
+        .blog-subtitle {
+            font-size: 12px;
+            color: #444444;
+            margin-top: 3px;
+        }
+        
+        .blog-date {
+            font-size: 11px;
+            color: #666666;
+            margin-top: 2px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #000000;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 11px;
+            text-align: center;
+            border-top: 1px solid #cccccc;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
+
+<table align="center">
+      <tr>
+          <td>
+            <div class="nav">
+                <a href="index.html">[home]</a>
+                <a href="/blog/converted/about.html">[about]</a>
+                <a href="/blog/converted/posts.html">[blog posts]</a>
+                <a href="/blog/converted/projects.html">[projects]</a>
+                <a href="/blog/converted/links.html">[things i like]</a>
+            </div>
+            
+            <div class="content">
+                <h1>welcome</h1>
+                <p>this is my personal website. nothing fancy, just works.</p>
+                
+                <hr>
+                
+                <h2>blog</h2>
+                <div id="blog-posts">
+                    loading...
+                </div>
+            </div>
+            
+            <div class="footer">
+                &copy; 2024 | <span id="last-updated"></span>
+            </div>
+          </td>
+      </tr>
+</table>
+
+<script>
+    fetch('blog-data.txt')
+        .then(response => response.text())
+        .then(data => {
+            // split into lines and filter out empty lines
+            const lines = data.split('\n').filter(line => line.trim());
+            
+            // take only the first 5 lines
+            const top5 = lines.slice(0, 5);
+            
+            if (top5.length === 0) {
+                document.getElementById('blog-posts').innerHTML = '<p>no blog posts yet</p>';
+                return;
+            }
+            
+            let html = '<ul class="blog-list">';
+            
+            top5.forEach(line => {
+                // split by tab
+                const parts = line.split('\t');
+                const title = parts[0] || 'untitled';
+                const subtitle = parts[1] || '';
+                const date = parts[2] || '';
+                const filename = parts[3] || '';
+                
+                html += `
+                    <li>
+                        <div class="blog-title">
+                            <a href="blog/converted/${filename}">${title}</a>
+                        </div>
+                `;
+                
+                if (subtitle) {
+                    html += `<div class="blog-subtitle">${subtitle}</div>`;
+                }
+                
+                if (date) {
+                    html += `<div class="blog-date">${date}</div>`;
+                }
+                
+                html += `</li>`;
+            });
+            
+            html += '</ul>';
+            document.getElementById('blog-posts').innerHTML = html;
+        })
+        .catch(err => {
+            document.getElementById('blog-posts').innerHTML = '<p>no blog posts yet</p>';
+        });
     
+    // set last updated date
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('last-updated').innerHTML = today;
+</script>
+
 </body>
 </html>
