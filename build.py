@@ -60,10 +60,10 @@ TEMPLATE = """<!DOCTYPE html>
 
 <div class="nav">
     <a href="index.html">[home]</a>
-    <a href="about.html">[about]</a>
-    <a href="posts.html">[blog posts]</a>
-    <a href="projects.html">[projects]</a>
-    <a href="links.html">[things i like]</a>
+    <a href="/html/about.html">[about]</a>
+    <a href="/html/blog.html">[blog posts]</a>
+    <a href="/html/projects.html">[projects]</a>
+    <a href="/html/links.html">[things i like]</a>
 </div>
 
 <div class="content">
