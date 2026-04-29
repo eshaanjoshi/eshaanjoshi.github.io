@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gradient Descent | evj</title>
+    <title>Blog Posts</title>
     <style>
         body {
             background: #ffffff;
@@ -38,9 +38,26 @@
         }
 
         a { color: #0000ff; }
-        
-        h1 { font-size: 18px; }
-        h2 { font-size: 16px; border-bottom: 1px solid #000; padding-bottom: 5px; }
+
+        .blog-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .blog-list li {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #cccccc;
+        }
+
+        .blog-list li:last-child { border-bottom: none; }
+
+        .blog-title { font-weight: bold; }
+        .blog-title a { color: #0000ff; text-decoration: none; }
+        .blog-title a:hover { text-decoration: underline; }
+        .blog-subtitle { font-size: 12px; color: #444444; margin-top: 3px; }
+        .blog-date { font-size: 11px; color: #666666; margin-top: 2px; }
         
         .footer {
             margin-top: 20px;
@@ -56,16 +73,30 @@
 <body>
 
 <div class="nav">
-    <a href="/index.html">[home]</a>
-    <a href="/html/about.html">[about]</a>
-    <a href="/html/posts.html">[blog posts]</a>
-    <a href="/html/projects.html">[projects]</a>
-    <a href="/html/links.html">[things i like]</a>
+    <a href="index.html">[home]</a>
+    <a href="about.html">[about]</a>
+    <a href="blog.html">[blog posts]</a>
+    <a href="projects.html">[projects]</a>
+    <a href="links.html">[things i like]</a>
 </div>
 
 <div class="content">
-<h1>A Blog About Nothing</h1>
+    <h1>blog posts</h1>
+    <ul class="blog-list">
+        
+<li>
+    <div class="blog-title"><a href="s.html">Sleep is Fake</a></div>
+    <div class="blog-subtitle">why 8 hours is a conspiracy</div>
+    <div class="blog-date">2024-11-10</div>
+</li>
 
+<li>
+    <div class="blog-title"><a href="b.html">On Burritos</a></div>
+    <div class="blog-subtitle">a meditation on cylindrical food</div>
+    <div class="blog-date">2024-11-02</div>
+</li>
+
+    </ul>
 </div>
 
 <div class="footer">&copy; 2024</div>
