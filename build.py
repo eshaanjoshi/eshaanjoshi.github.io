@@ -214,6 +214,8 @@ def to_md(mdfile: str, path: str, htmlpath: str):
     html = TEMPLATE.format(title=title, content=rendered)
 
     outpath = htmlpath + "/" + path.replace(".md", ".html")
+    os.makedirs(htmlpath, exist_ok=True)
+
     with open(outpath, 'w') as f:
         f.write(html)
 
