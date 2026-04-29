@@ -1,8 +1,8 @@
 ---
-title: Gradient Descent | evj
-subtitle: A Blog About Nothing
-date: 2024-11-02
-tags: ha
+title: Links
+subtitle:
+date: 2024-4-29
+tags: noblog
 ---
 
 # Links
